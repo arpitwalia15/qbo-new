@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+	<title>play-button</title>
+	<defs>
+		<image  width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAQMAAACQp+OdAAAAAXNSR0IB2cksfwAAAAZQTFRF////////VXz1bAAAAAJ0Uk5TAP9bkSK1AAABDElEQVR4nF2STU7DMBCF56WRnF18AESy4xa4PVY3TcxNegSWLBANF0FBHKBZVEpVSJgJ7quE8qPP8ng8895ARGaB2OtG6WuDcJCf3GAW29BnUogtLEQ0CFIe+4dx8JDqI5NmW8B+toDMmsSNUIitngT0s1siVpdModnAnXKFsIcbCoWqQ9l7hbJH1dUKbkC1XyusTghxgTPCprV6Lgb+aNBEuf8UmQxCZ7B7EovfYco0fy3NAs8+wWuu8J1LeNPFAofYJujWCfo6weD/A7cYfD2+JOQVBi9FgqUMFsZSFR7fDbSdu6/UV2rw2jJFoCwUitJRTMpLwWnBzRTaRONoJc2l3RyA20hwSP7G5hdcpZhN1SZc4wAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>
