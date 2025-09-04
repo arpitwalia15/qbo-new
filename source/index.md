@@ -335,10 +335,6 @@ type: index
 </iframe>
 </div>
 </section>
-
-<script>
-</script>
-
 <section class="testimonial-section">
   <h2>Leading AI Innovators Trust QBO</h2>
   <div class="swiper testimonial-slider">
