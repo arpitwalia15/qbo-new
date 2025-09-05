@@ -11,17 +11,16 @@
 
 nav:
   # Navigation bar logo image
-  logo:
-  display_title: true
+  logo: /img/logo.png # <-- point this to your logo
+  display_title: false # <-- hide text title, since you're using an image
   display_post_title: true
-  # Whether to fix navigation bar
   fixed: false
 
-menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+# menu:
+# Home: / || fas fa-home
+# List||fas fa-list:
+#   Music: /music/ || fas fa-music
+#   Movie: /movies/ || fas fa-video
 
 # --------------------------------------
 # Code Blocks Settings
@@ -56,7 +55,7 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/logo.png
   effect: false
 
 # Disable all banner images
@@ -111,7 +110,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: false
-  subtitle: 'Page Not Found'
+  subtitle: "Page Not Found"
   background: /img/error-page.png
 
 post_meta:
@@ -256,14 +255,80 @@ noticeOutdate:
 # --------------------------------------
 footer:
   nav:
-  owner:
-    enable: true
-    since: 2025
-  # Copyright of theme and framework
-  copyright:
-    enable: true
-    version: true
-  custom_text:
+    - width: 2
+      content:
+        - title: "" # no title, just icons
+          item:
+            - html: '<div class="footer-social-icons">
+                <a href="https://www.linkedin.com/company/qbo" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/qbo" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@qbo" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/qbo" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://facebook.com/qbo" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>'
+
+    - width: 2
+      content:
+        - title: Why QBO test
+          item:
+            - title: Why QBO
+              url: /why-qbo/
+
+    - width: 2
+      content:
+        - title: Products
+          item:
+            - title: QBO Container Engine
+              url: /products/container-engine/
+            - title: QBO Kubernetes Engine
+              url: /products/kubernetes-engine/
+
+    - width: 2
+      content:
+        - title: Solutions
+          item:
+            - title: AI & ML
+              url: /solutions/ai-ml/
+            - title: GPU Cloud
+              url: /solutions/gpu-cloud/
+            - title: Edge Cloud
+              url: /solutions/edge-cloud/
+            - title: Use Cases
+              url: /solutions/use-cases/
+            - title: Industries
+              url: /solutions/industries/
+
+    - width: 2
+      content:
+        - title: Resources
+          item:
+            - title: Blogs
+              url: /resources/blogs/
+            - title: Case Studies
+              url: /resources/case-studies/
+            - title: Demos
+              url: /resources/demos/
+            - title: Documentation
+              url: /resources/documentation/
+            - title: Videos
+              url: /resources/videos/
+
+    - width: 2
+      content:
+        - title: Company
+          item:
+            - title: About Us
+              url: /company/about/
+            - title: Alliances
+              url: /company/alliances/
+            - title: Careers
+              url: /company/careers/
+            - title: Privacy Policy
+              url: /company/privacy-policy/
+            - title: Terms of Service
+              url: /company/terms/
+            - title: EULA
+              url: /company/eula/
 
 # --------------------------------------
 # Aside Settings
@@ -339,7 +404,7 @@ aside:
     # The title shows the series name
     series_title: false
     # Order by title or date
-    orderBy: 'date'
+    orderBy: "date"
     # Sort of order. 1, asc for ascending; -1, desc for descending
     order: -1
   card_webinfo:
@@ -369,9 +434,9 @@ translate:
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: '繁'
+  msgToTraditionalChinese: "繁"
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '簡'
+  msgToSimplifiedChinese: "簡"
 
 # Read Mode
 readmode: true
@@ -862,7 +927,7 @@ canvas_fluttering_ribbon:
 canvas_nest:
   enable: false
   # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  color: '0,0,255'
+  color: "0,0,255"
   # The opacity of line (0~1)
   opacity: 0.7
   # The z-index property of the background
@@ -911,7 +976,7 @@ lightbox:
 series:
   enable: false
   # Order by title or date
-  orderBy: 'title'
+  orderBy: "title"
   # Sort of order. 1, asc for ascending; -1, desc for descending
   order: 1
   number: true
@@ -941,16 +1006,16 @@ chartjs:
   # The default settings are only used when the MD syntax is not specified.
   # General font color for the chart
   fontColor:
-    light: 'rgba(0, 0, 0, 0.8)'
-    dark: 'rgba(255, 255, 255, 0.8)'
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
   # General border color for the chart
   borderColor:
-    light: 'rgba(0, 0, 0, 0.1)'
-    dark: 'rgba(255, 255, 255, 0.2)'
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
   # Background color for scale labels on radar and polar area charts
   scale_ticks_backdropColor:
-    light: 'transparent'
-    dark: 'transparent'
+    light: "transparent"
+    dark: "transparent"
 
 # Note - Bootstrap Callout
 note:
@@ -989,8 +1054,8 @@ snackbar:
   enable: false
   position: bottom-left
   # The background color of Toast Notification in light mode and dark mode
-  bg_light: '#49b1f5'
-  bg_dark: '#1f1f1f'
+  bg_light: "#49b1f5"
+  bg_dark: "#1f1f1f"
 
 # Instant.page
 # https://instant.page/
@@ -1033,11 +1098,7 @@ Open_Graph_meta:
 
 # Structured Data
 # https://developers.google.com/search/docs/guides/intro-structured-data
-structured_data:
-  enable: false
-  # Alternate name for the site, used in structured data
-  # Format: ['name1', 'name2']
-  alternate_name:
+structured_data: true
 
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
@@ -1046,9 +1107,16 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    - <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    - <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    - <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   bottom:
-    # - <script src="xxxx"></script>
+    - <script src="/js/custom.js"></script>
+
+      # - <script src="xxxx"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1123,3 +1191,30 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+
+index:
+  enable: true
+
+menu:
+  Products: /why-qbo/
+  Solutions: /why-qbo/
+  Why QBO: /why-qbo/
+  Documentation: https://docs.qbo.io/docs/
+  Resources: /why-qbo/
+  Company: /why-qbo/
+  Request Demo: https://meetings-eu1.hubspot.com/jamie-p/demo
+  Contact Us: /contact/
+
+logo: /img/logo.png
+
+# _config.butterfly.yml
+navbar:
+  logo:
+    text: "" # remove 'Hexo' text
+    img: /img/logo.png # path to your logo
+    width: 180px # change as per design
+    height: auto
+
+layout:
+  width: default # this equals 1200px
+
