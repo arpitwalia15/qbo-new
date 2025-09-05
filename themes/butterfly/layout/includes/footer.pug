@@ -1,5 +1,16 @@
 - const { nav, owner, copyright, custom_text } = theme.footer
 
+.footer-top
+  .footer-top-inner(style='display:flex; justify-content:space-between; align-items:center;')
+    // Left: Logo
+    .footer-logo
+      img(src='/img/logo.png' alt='footer logo' style='height:85px;')
+
+    // Right: Buttons
+    .footer-buttons
+      a(href='/contact/' class='footer-btn') Contact Us
+      a(href='/demo/' class='footer-btn primary') Request Demo
+
 if nav
   .footer-flex
     for block in nav
@@ -17,23 +28,6 @@ if nav
                   div!= subitem.title
 .footer-other
   .footer-copyright
-    if owner.enable
-      - const currentYear = new Date().getFullYear()
-      - const sinceYear = owner.since
-      span.copyright
-        if sinceYear && sinceYear != currentYear
-          != `&copy;&nbsp;${sinceYear} - ${currentYear} By ${config.author}`
-        else
-          != `&copy;&nbsp;${currentYear} By ${config.author}`
-    if copyright.enable
-      - const v = copyright.version ? getVersion() : false
-      span.framework-info
-        if owner.enable && nav
-          span.footer-separator |
-        span= _p('footer.framework') + ' '
-        a(href='https://hexo.io')= `Hexo${ v ? ' ' + v.hexo : '' }`
-        span.footer-separator |
-        span= _p('footer.theme') + ' '
-        a(href='https://github.com/jerryc127/hexo-theme-butterfly')= `Butterfly${ v ? ' ' + v.theme : '' }`
-  if theme.footer.custom_text
-    .footer_custom_text!= theme.footer.custom_text
+    span.copyright
+      img(src='/img/footer-logo.png' alt='footer logo' style='height:60px; margin-right:8px; vertical-align:middle;')
+      | Copyright #{new Date().getFullYear()} QBO. All rights reserved.
