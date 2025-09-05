@@ -1196,12 +1196,44 @@ index:
   enable: true
 
 menu:
-  Products: /why-qbo/
-  Solutions: /why-qbo/
+  Products:
+    Compute Services:
+      GPU Compute: /solutions/gpu-compute/
+      CPU Compute: /solutions/cpu-compute/
+      Availability Zones : /solutions/cpu-compute/
+    Storage Service: 
+      Object Storage : /solutions/cpu-compute/
+      Local Storage : /solutions/cpu-compute/
+    Networking Services: 
+      Virtual Private Cloud : /solutions/cpu-compute/
+      Global Neural Fabric : /solutions/cpu-compute/
+    Managed Services: 
+      QBO Container Engine : /products/qbo-container-engine/
+      QBO Kubernetes Engine : /products/qbo-kubernetes-engine/
+      Slurm on MC2 : /solutions/cpu-compute/
+      Kubeflow on K8s : /solutions/cpu-compute/
+    Platform: 
+      AsyncAPI : /solutions/cpu-compute/
+      Observability : /solutions/cpu-compute/
+      Security : /solutions/cpu-compute/
+  Solutions: 
+    AI & ML: /solutions/ai-ml/
+    GPU Cloud: /solutions/gpu-cloud/
+    Edge Cloud: /solutions/edge-cloud/
   Why QBO: /why-qbo/
   Documentation: https://docs.qbo.io/docs/
-  Resources: /why-qbo/
-  Company: /why-qbo/
+  Resources:
+    Blogs: /blogs/
+    Case Studies: /case-studies/opexx-ionos
+    Demos: https://docs.qbo.io/demos/
+    Videos: /videos/
+    Use Cases: /use-cases/
+    Industries: /industries/
+  Company:
+    About Us: /about/
+    Alliances: /alliances/
+    Contact Us: /contact/
+    Careers: /career/
   Request Demo: https://meetings-eu1.hubspot.com/jamie-p/demo
   Contact Us: /contact/
 
