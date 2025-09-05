@@ -168,4 +168,18 @@ thumbnails.forEach(thumb => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuGroups = document.querySelectorAll(".menus_item");
+
+  menuGroups.forEach(menu => {
+    const arrow = menu.querySelector(".arrow"); // assuming chevron/arrow has class 'arrow'
+
+    if (arrow) {
+      arrow.addEventListener("click", function (e) {
+        e.stopPropagation(); // prevent parent link click
+        menu.classList.toggle("open"); // toggle only this menu
+      });
+    }
+  });
+});
 
