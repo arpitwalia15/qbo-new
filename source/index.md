@@ -6,7 +6,7 @@ type: index
 
 <section class="hero-section">
   <video autoplay="" muted="" loop="" playsinline="" class="hero-video">
-  <source src="https://qbo.io/wp-content/uploads/2025/03/neural.mp4" type="video/mp4">
+  <source src="video/neural.mp4" type="video/mp4">
 </video>
   <div class="hero-overlay">
   <div class="hero-container">

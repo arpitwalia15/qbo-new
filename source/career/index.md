@@ -3,7 +3,7 @@ title: career
 date: 2025-09-01T11:22:09.000Z
 ---
 
-<section class="contact-page career-page">
+<section class="career-page">
   <div class="container">
   <div class="why-qbo-hero-content">
   <h1>Join QBO</h1>

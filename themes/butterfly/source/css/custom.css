@@ -2692,7 +2692,7 @@ section.blog-page {
 }
 
 #page .last{
-  margin-bottom: 80px!important;
+  padding-bottom: 80px!important;
 }
 .case-study-detail{
       background-image: url(/img/header.png) !important;
@@ -3816,7 +3816,9 @@ section.ai-page-request-demo h2 {
 
 
 
-
+button#qbo-submit-btn {
+    float: right;
+}
 
 
 /* Dark Theme Css */
@@ -3827,7 +3829,7 @@ html[data-theme="dark"] .menus_item span {
 html[data-theme="dark"] .feature-section{
   background-color: #000!important;
 }
-html[data-theme="dark"] .feature-text h2, html[data-theme="dark"] .feature-text p, html[data-theme="dark"] .Cloud-Computing h2, html[data-theme="dark"] .Cloud-Computing h3, html[data-theme="dark"] .Cloud-Computing p, html[data-theme="dark"] .ai-section h2 , html[data-theme="dark"] .testimonial-section h2, html[data-theme="dark"] .testimonial-section strong, html[data-theme="dark"] .testimonial-section span, html[data-theme="dark"]  .footer-social-icons i,html[data-theme="dark"] footer#footer .footer-flex-title, html[data-theme="dark"] #footer .footer-flex-content a , html[data-theme="dark"] #footer .footer-copyright, html[data-theme="dark"] #footer .footer-copyright a {
+html[data-theme="dark"] .feature-text h2, html[data-theme="dark"] .feature-text p, html[data-theme="dark"] .Cloud-Computing h2, html[data-theme="dark"] .Cloud-Computing h3, html[data-theme="dark"] .Cloud-Computing p, html[data-theme="dark"] .ai-section h2 , html[data-theme="dark"] .testimonial-section h2, html[data-theme="dark"] .testimonial-section strong, html[data-theme="dark"] .testimonial-section span, html[data-theme="dark"]  .footer-social-icons i,html[data-theme="dark"] footer#footer .footer-flex-title, html[data-theme="dark"] #footer .footer-flex-content a , html[data-theme="dark"] #footer .footer-copyright, html[data-theme="dark"] #footer .footer-copyright a, html[data-theme="dark"] section.get-in-touch h2 , html[data-theme="dark"] section.get-in-touch p, html[data-theme="dark"] section.get-in-touch label {
     color: #dad3c9!important;
 }
 html[data-theme="dark"] .ai-section, html[data-theme="dark"] .testimonial-section{
@@ -3886,8 +3888,49 @@ color: #094d9f!important;
 html[data-theme="dark"] .menus_item span:hover{
 color: #094d9f!important;
 }
+html[data-theme="dark"] .mission-wrapper{
+  background: transparent;
+}
+
+html[data-theme="dark"] .qbo-container-engine-section .right-div{
+    background: #0a2138!important;
+} 
+html[data-theme="dark"] .vision-section, html[data-theme="dark"] #nav ,html[data-theme="dark"] footer#footer ,html[data-theme="dark"] section.Current-Openings,html[data-theme="dark"] .blog-section, html[data-theme="dark"] .blog-section-2 , html[data-theme="dark"] .case-study, html[data-theme="dark"] .cards-section, html[data-theme="dark"] .solutions-card, html[data-theme="dark"] header#page-header , html[data-theme="dark"]  #page-header  nav#nav{
+    background: #191a1b!important;
+} 
+html[data-theme="dark"] h3#timeline-title,html[data-theme="dark"] .mission-years span.active,html[data-theme="dark"] .mission-years span ,html[data-theme="dark"] p#timeline-description,html[data-theme="dark"] .vision-text p,html[data-theme="dark"] .vision-text h3,html[data-theme="dark"]  .alliances h2,html[data-theme="dark"]  .Current-Openings h2, html[data-theme="dark"] section.Current-Openings p, html[data-theme="dark"] .blog-content h2, html[data-theme="dark"] .blog-content p, html[data-theme="dark"] .case-study h1, html[data-theme="dark"] .case-study p,html[data-theme="dark"] .case-left h2, html[data-theme="dark"] .case-left li, html[data-theme="dark"] .case-left th,  html[data-theme="dark"] .case-left td, html[data-theme="dark"] .videos-section h2, html[data-theme="dark"] .videos-section p, html[data-theme="dark"] .cards-section h3, html[data-theme="dark"] .cards-section p, html[data-theme="dark"] .cards-section a,html[data-theme="dark"] .qbo-content h2, html[data-theme="dark"] .qbo-content p,html[data-theme="dark"] .qbo-solutions-section h3, html[data-theme="dark"] .qbo-solutions-section p, html[data-theme="dark"] .solutions-card h3, html[data-theme="dark"] .solutions-card p{
+    color: #d7d0c5!important;
+}
+
+html[data-theme="dark"] section.videos-section, html[data-theme="dark"]  section.qbo-solutions-section ,html[data-theme="dark"] .qbo-solutions-section .swiper-slide.testimonial-card{
+    background: #373a3a!important;
+}
+
+#page-header nav#nav {
+    background: white!important;
+}
 
 
+
+
+
+.nav-fixed {
+    position: fixed!important;
+    top: 00px!important;
+    background: #fff!important;
+    z-index: 99999999;
+}
+html[data-theme="dark"] .nav-fixed ,html[data-theme="dark"]  section.alliances {
+    background: #191a1b!important;
+}
+nav#nav {
+    top: 0px!important;
+    background: transparent!important;
+}
+.nav-visible {
+    top: 0!important;
+    margin-top: -95px;
+}
 video.hero-video {
     border-bottom: 0px;
     height: fit-content;
@@ -3988,5 +4031,107 @@ section.Cloud-Computing , section.video-section, .testimonial-section{
 }
 }
 
+
+
+
+
+#qbo-contact-form {
+  max-width: 900px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.qbo-form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.qbo-form-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.qbo-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.qbo-form-group {
+  flex: 1;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.qbo-form-group.qbo-full {
+  width: 100%;
+}
+
+.qbo-form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+#qbo-contact-form input[type="text"],
+#qbo-contact-form input[type="email"],
+#qbo-contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  font-size: 14px;
+}
+
+#qbo-contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.qbo-radio-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.qbo-form-group.qbo-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+#qbo-submit-btn {
+  background: #4db8ff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+#qbo-submit-btn:hover {
+  background: #3399ff;
+}
+
+#qbo-char-count {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  text-align: right;
+}
+
+section.contact-page {
+    background: url('http://localhost:4000/img/Group-1597878188-7.png')!important;
+    background-size: cover!important;
+  }
+
+section.contact-page.about-us {
+    background: url('http://localhost:4000/img/Group-1597878188-5.png')!important;
+    background-size: cover!important;
+}
 
 

@@ -183,3 +183,51 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("qbo-contact-form");
+  const responseBox = document.getElementById("qbo-form-response");
+  const messageInput = document.getElementById("message");
+  const charCount = document.getElementById("qbo-char-count");
+
+  // live char counter
+  if (messageInput && charCount) {
+    messageInput.addEventListener("input", () => {
+      charCount.textContent = `${messageInput.value.length} / 180`;
+    });
+  }
+
+  // ajax submit
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        form.reset();
+        responseBox.style.display = "block";
+        responseBox.style.color = "green";
+        responseBox.textContent = "✅ Thank you! Your message has been sent successfully.";
+      } else {
+        responseBox.style.display = "block";
+        responseBox.style.color = "red";
+        responseBox.textContent = "❌ Oops! Something went wrong, please try again.";
+      }
+    } catch (err) {
+      responseBox.style.display = "block";
+      responseBox.style.color = "red";
+      responseBox.textContent = "⚠️ Network error. Please check your connection.";
+    }
+  });
+});
